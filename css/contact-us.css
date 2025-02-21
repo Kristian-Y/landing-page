@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+}
+
+/* Global Styles */
+main {
+    background-color: #121212;
+    color: #E0E0E0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contact Container */
+.contact-container {
+    background-color: #1F1F1F;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.6);
+    width: 400px;
+    text-align: center;
+}
+
+.contact-container h2 {
+    color: #00ADB5;
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* Input Fields */
+.input-field, .textarea-field {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    background-color: #121212;
+    border: 2px solid #00ADB5;
+    border-radius: 6px;
+    color: #E0E0E0;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.textarea-field {
+    resize: none;
+    height: 120px;
+}
+
+.input-field:focus, .textarea-field:focus {
+    outline: none;
+    border-color: #FF2E63;
+    box-shadow: 0px 0px 8px #FF2E63;
+}
+
+/* Send Button */
+.send-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #00ADB5;
+    color: #121212;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+.send-btn:hover {
+    background-color: #FF2E63;
+    color: #E0E0E0;
+    box-shadow: 0px 0px 10px #FF2E63;
+}
+
+/* Contact Info */
+.contact-info {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.contact-info a {
+    color: #FF2E63;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-info a:hover {
+    color: #00ADB5;
+    text-decoration: underline;
+}

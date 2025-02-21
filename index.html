@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Store</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
 
@@ -13,17 +15,17 @@
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Login</a></li>
+                <li><a href="./products.html">Products</a></li>
+                <li><a href="./contact-us.html">Contact</a></li>
+                <li><a href="./login.html">Login</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="hero">
-        <h1>Welcome to our store!</h1>
-        <p>Discover amazing products at great prices.</p>
-        <a href="#" class="btn">Shop Now</a>
+        <h1 data-aos="fade-up">Welcome to our store!</h1>
+        <p data-aos="fade-up">Discover amazing products at great prices.</p>
+        <a href="#" class="btn" data-aos="fade-up">Shop Now</a>
     </section>
 
     <section class="products">
@@ -53,6 +55,12 @@
     <footer>
         <p>&copy; 2025 Online Store. All rights reserved.</p>
     </footer>
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
