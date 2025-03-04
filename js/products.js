@@ -61,16 +61,18 @@ localStorage.setItem('products', products)
 productList.innerHTML = ''
 products.forEach(product => {
     productList.innerHTML += `
-        <div class="product" data-aos="fade-down">
+        <div class="product" data-aos="fade-down" id="${product.id}">
             <img src="${product.image}" alt="Product 1">
             <h3>${product.name}</h3>
             <p>${product.price}$</p>
             <div class="btns">
                     <a href="">buy</a>
-                    <a href="" id="${product.id}">info</a>
+                    <a href="" id="">info</a>
             </div>
         </div>
-    `
-    document.getElementById(product.id).addEventListener 
+    ` 
+    document.addEventListener("click", () => {
+      localStorage.setItem("c-item", product.id)
+    })
 });
   
